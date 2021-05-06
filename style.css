@@ -11,9 +11,16 @@ body{
   grid-template-rows: 1.5fr 10fr 2fr;
   width: 100vw;
   min-height: 100vh;
-  background-image: url('img/bg.jpg');
   background-color: #171717;
+  overflow: hidden;
 }
+.bgImg{
+  width: 110vw;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+}
+
 
 header{
 display: grid;
@@ -46,7 +53,9 @@ header nav{
 
 header nav a{
   cursor: pointer;
-  margin-left: 1.5rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  font-weight: 500;
 }
 
 header .loginBtn{
@@ -61,6 +70,7 @@ header .loginBtn{
   padding: 10px;
   border-radius: 20px;
   color: white;
+  box-shadow: 1px 3px 20px rgba(65, 65, 250, 0.479)
 }
 
 main{
