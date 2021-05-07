@@ -12,7 +12,7 @@ body{
   width: 100vw;
   min-height: 100vh;
   background-color: #171717;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .bgImg{
   width: 110vw;
@@ -74,6 +74,41 @@ header .loginBtn{
 }
 
 main{
+}
+
+main .title{
+  color: white;
+  margin-top: 10rem;
+  margin-left: 3rem;
+}
+
+.titleh1{
+  margin-bottom: 3rem;
+}
+
+.titleh1 h1{
+  font-size: 40pt;
+  font-weight: 500;
+}
+
+.ourPrices{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  background: linear-gradient(190deg, #4141FA, #1F1FE2);
+  box-shadow: 1px 3px 20px rgba(65, 65, 250, 0.479);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.ourPrices img{
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
 }
 
 footer{
