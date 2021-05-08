@@ -91,6 +91,10 @@ main .title{
   font-weight: 500;
 }
 
+main .titleBtns{
+  display: flex;
+}
+
 .ourPrices{
   display: flex;
   align-items: center;
@@ -101,7 +105,7 @@ main .title{
   box-shadow: 1px 3px 20px rgba(65, 65, 250, 0.479);
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
@@ -110,6 +114,28 @@ main .title{
   height: 16px;
   margin-left: 5px;
 }
+
+.beBooster{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.171);
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+.beBooster img{
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+
 
 footer{
 }
