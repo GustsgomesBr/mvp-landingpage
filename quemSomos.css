@@ -1,0 +1,32 @@
+.firstSection{
+  background-color: white;
+  width: 100vw;
+  height: 20rem;
+  display: flex;
+  padding: 1.5rem;
+  margin-top: 10rem;
+}
+
+.quemSomos{
+  width: 50%;
+}
+
+.quemSomos h1{
+  font-size: 25pt;
+  margin-bottom: 0.75rem;
+}
+
+.quemSomos p{
+  font-size: 14pt;
+  max-width: 90%;
+}
+
+.teemoImg{
+  width: 50%;
+}
+
+.teemoImg img{
+  width: 27rem;
+  height: 22rem;
+  transform: translateY(-50px);
+}

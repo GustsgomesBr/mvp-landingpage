@@ -8,19 +8,18 @@
 
 body{
   display: grid;
-  grid-template-rows: 1.5fr 10fr 2fr;
-  width: 100vw;
-  min-height: 100vh;
+  grid-template-rows: 0.7fr 10fr 2fr;
+  width: 100%;
   background-color: #171717;
   overflow-x: hidden;
 }
 .bgImg{
-  width: 110vw;
+  width: 120%!important;
+  height: auto!important;
   position: absolute;
   z-index: -1;
   opacity: 0.3;
 }
-
 
 header{
 display: grid;
@@ -31,7 +30,7 @@ header .logo{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 header .logo h1{
