@@ -1,0 +1,22 @@
+.secondSection{
+  width: 100vw;
+  height: 22rem;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.itemServicos{
+
+}
+
+.itemServicos h1{
+  color: #4141FA;
+  font-size: 25pt;
+  font-weight: 800;
+}
+
+.itemServicos p{
+  color: white;
+}
