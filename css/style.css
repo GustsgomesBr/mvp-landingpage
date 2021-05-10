@@ -8,7 +8,7 @@
 
 body{
   display: grid;
-  grid-template-rows: 0.7fr 10fr 2fr;
+  grid-template-rows: 0.3fr 10fr 1fr;
   width: 100%;
   background-color: #171717;
   overflow-x: hidden;

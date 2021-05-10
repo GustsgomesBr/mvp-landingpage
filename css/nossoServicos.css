@@ -1,22 +1,32 @@
 .secondSection{
   width: 100vw;
   height: 22rem;
-  padding: 1.5rem;
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-}
-
-.itemServicos{
-
+  grid-gap: 15px;
+  padding-right: 3rem;
+  padding-left: 2rem;
 }
 
 .itemServicos h1{
-  color: #4141FA;
+  color: white;
   font-size: 25pt;
   font-weight: 800;
 }
 
+#blue{
+  color: #4141FA;
+  margin-left: 10px;
+}
+
 .itemServicos p{
   color: white;
+  margin-top: 10px;
+}
+
+.h1Item{
+  display: flex;
 }
