@@ -132,5 +132,65 @@ main .titleBtns{
 }
 
 footer{
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  height: 19rem;
+}
+
+footer .menus{
+  height: 80%;
+  width: 95%;
+  display: flex;
+
+}
+
+footer p{
+  color: #FBFBFB;
+  font-weight: 300;
+}
+
+footer a{
+  cursor: pointer;
+}
+
+footer .navegacao{
+  width: 20rem;
+}
+
+.menus h1{
+  font-size: 17pt;
+  font-weight: 600;
+}
+
+.navegacao nav{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+
+.navegacao nav a{
+  padding: 5px;
+  font-size: 10pt;
+  font-weight: 300;
+}
+
+.contato{
+  width: 20rem;
+  margin-left: 1rem;
+}
+
+.contato h1{
+  margin-bottom: 0.5rem;
+}
+.contato p{
+  padding: 5px;
+  font-size: 10pt;
+  font-weight: 300;
+}
+
+.certificado img{
+  width: 7rem;
 }
