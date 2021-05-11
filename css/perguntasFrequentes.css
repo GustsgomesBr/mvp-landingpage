@@ -1,0 +1,41 @@
+.fifthSection{
+  background-color: #FBFBFB;
+  width: 100vw;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  color: black;
+}
+
+.fifthSection h1{
+  font-size: 30pt;
+}
+
+.perguntas{
+  width: 100%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.perguntaItem{
+  width: 35rem;
+  height: 4rem;
+  background-color: #4141FA;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: white;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.perguntaItem h1{
+  font-size: 13pt;
+  font-weight: 500;
+}

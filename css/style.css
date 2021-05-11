@@ -130,3 +130,7 @@ main .titleBtns{
   height: 16px;
   margin-left: 5px;
 }
+
+footer{
+  background-color: red;
+}
