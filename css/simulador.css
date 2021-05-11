@@ -32,7 +32,7 @@
 }
 
 .simBlocks{
-  width: 90%;
+  width: 95%;
   height: 90%;
   margin-top: 1.5rem;
   display: flex;
@@ -40,7 +40,7 @@
 }
 
 .simItemBlock{
-  width: 17rem;
+  width: 20rem;
   height: 25rem;
   background-color: white;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -73,4 +73,50 @@ padding-left: 1.5rem;
   height: 2rem;
   width: 7rem;
   border: 2px solid #171717;
+}
+
+.aboutBoost p{
+  width: 20rem;
+  height: 10rem;
+  font-size: 15pt;
+  font-weight: 500;
+}
+
+
+.simResult{
+  width: 30rem;
+  height: 15rem;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.simResult h1{
+  font-size: 40pt;
+  color: #4CFF5E;
+  text-shadow: 0px 0px 25px #69ff78a2;
+}
+
+.simResult p{
+  font-size: 7pt;
+  font-weight: 400;
+  color: #454545;
+}
+
+.simResult button{
+  border: none;
+  margin-top: 1rem;
+  background: linear-gradient(to left, #4CFF5E, #2AC0AE);
+  box-shadow: 0px 0px 15px #46f36e71;
+  width: 6rem;
+  height: 3rem;
+  border-radius: 20px;
+}
+
+.simResult img{
+  width: 1.5rem;
 }
