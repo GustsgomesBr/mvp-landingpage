@@ -106,3 +106,29 @@ var eloBoost = [
   },
 ]
 
+var ligaAtual = document.getElementById('ligaAtual');
+var divisaoAtual = document.getElementById('divisaoAtual');
+var ligaDesejada = document.getElementById('ligaDesejada');
+var divisaoDesejada = document.getElementById('divisaoDesejada');
+
+function Simular(){
+  console.log(`Liga Atual: ${ligaAtual.selectedIndex} Divisão Atual: ${divisaoAtual.selectedIndex} Liga Desejada: ${ligaDesejada.selectedIndex} Divisão desejada: ${divisaoDesejada.selectedIndex}`)
+  if(ligaAtual.selectedIndex > ligaDesejada.selectedIndex){
+    alert('Erro: A liga desejada deve ser maior que a liga atual');
+  }else if(ligaAtual.selectedIndex == ligaDesejada.selectedIndex && divisaoAtual.selectedIndex > divisaoDesejada.selectedIndex){
+    alert('Erro: A divisão atual deve ser menor que a divisão desejada');
+  }else if(ligaAtual.selectedIndex == ligaDesejada.selectedIndex &&  divisaoAtual.selectedIndex == divisaoDesejada.selectedIndex){
+    alert('Erro: A divisão atual deve ser menor que a divisão desejada;');
+  }else{
+    var estadoAtual;
+    var estadoDesejado;
+    for (let i = 0; i < eloBoost.length; i++) {
+        if(eloBoost[i].liga === ligaAtual.value && eloBoost[i].divisao === divisaoAtual.value){
+          estadoAtual = i;
+        }
+        if(eloBoost[i].liga === ligaDesejada.value && eloBoost[i].divisao === divisaoDesejada.value){
+          estadoDesejado = i;
+        }
+    }
+  }
+}
