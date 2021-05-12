@@ -124,11 +124,25 @@ function Simular(){
     var estadoDesejado;
     for (let i = 0; i < eloBoost.length; i++) {
         if(eloBoost[i].liga === ligaAtual.value && eloBoost[i].divisao === divisaoAtual.value){
-          estadoAtual = i;
+          estadoAtual = i + 1;
         }
         if(eloBoost[i].liga === ligaDesejada.value && eloBoost[i].divisao === divisaoDesejada.value){
-          estadoDesejado = i;
+          estadoDesejado = i + 1;
         }
     }
+    CalcularSimulacao(estadoAtual, estadoDesejado);
   }
+}
+
+function CalcularSimulacao(idAtual, idDesejado){
+  var calculo = 0;
+  var resultadoH1 = document.getElementById('resultadoSimulacao');
+  var valorAntigo = document.getElementById('valorAnterior');
+  for (let soma = idAtual; soma < idDesejado; soma++) {
+    calculo = calculo + eloBoost[soma].valor
+  }
+  resultadoH1.innerHTML = 'R$' + calculo;
+  valorAntigo.innerHTML = calculo + (calculo * 0,25);
+  valorAntigo.innerHTML = 'R$' + valorAntigo.innerHTML
+  
 }
