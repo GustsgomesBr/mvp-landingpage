@@ -101,8 +101,23 @@ var eloBoost = [
   },
   {
     liga: "Mestre",
-    divisao: "I",
+    divisao: "IV",
     valor: 110
+  },
+  {
+    liga: "Mestre",
+    divisao: "III",
+    valor: 0
+  },
+  {
+    liga: "Mestre",
+    divisao: "II",
+    valor: 0
+  },
+  {
+    liga: "Mestre",
+    divisao: "I",
+    valor: 0
   },
 ]
 
@@ -120,6 +135,11 @@ function Simular(){
   }else if(ligaAtual.selectedIndex == ligaDesejada.selectedIndex &&  divisaoAtual.selectedIndex == divisaoDesejada.selectedIndex){
     alert('Erro: A divisão atual deve ser menor que a divisão desejada;');
   }else{
+    if(ligaDesejada.value === "Mestre"){
+      divisaoDesejada.disabled = true
+    }else{
+      divisaoDesejada.disabled = false;
+    }
     var estadoAtual;
     var estadoDesejado;
     for (let i = 0; i < eloBoost.length; i++) {
@@ -128,8 +148,9 @@ function Simular(){
         }
         if(eloBoost[i].liga === ligaDesejada.value && eloBoost[i].divisao === divisaoDesejada.value){
           estadoDesejado = i + 1;
+          console.log(ligaDesejada.value)
         }
-    }
+      }
     CalcularSimulacao(estadoAtual, estadoDesejado);
   }
 }
