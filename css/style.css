@@ -175,6 +175,11 @@ footer .navegacao{
   padding: 5px;
   font-size: 10pt;
   font-weight: 300;
+  width: 200px;
+}
+
+.navegacao nav a:hover{
+  color: #929292;
 }
 
 .contato{
@@ -193,4 +198,14 @@ footer .navegacao{
 
 .certificado img{
   width: 7rem;
+}
+
+#codeart{
+  color: rgb(180, 180, 180);
+  text-decoration: none;
+}
+
+#codeart:hover{
+  color: #7575ff;
+  font-weight: 600;
 }
