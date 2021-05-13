@@ -88,6 +88,7 @@ main p{
 
 img{
   position: absolute;
+  z-index: -2;
   width: 20rem;
   right: 0;
   bottom: 0;
