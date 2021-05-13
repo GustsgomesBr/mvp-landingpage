@@ -168,10 +168,10 @@ function Simular(){
     var estadoDesejado;
     for (let i = 0; i < eloBoost.length; i++) {
         if(eloBoost[i].liga === ligaAtual.value && eloBoost[i].divisao === divisaoAtual.value){
-          estadoAtual = i + 1;
+          estadoAtual = i;
         }
         if(eloBoost[i].liga === ligaDesejada.value && eloBoost[i].divisao === divisaoDesejada.value){
-          estadoDesejado = i + 1;
+          estadoDesejado = i;
           console.log(ligaDesejada.value)
         }
       }
@@ -188,8 +188,8 @@ function CalcularSimulacao(idAtual, idDesejado){
   for (let soma = idAtual; soma < idDesejado; soma++) {
     calculo = calculo + eloBoost[soma].valor
   }
-  imgAtual.src = eloBoost[idAtual-1].img;
-  imgDesejado.src= eloBoost[idDesejado-1].img;
+  imgAtual.src = eloBoost[idAtual].img;
+  imgDesejado.src= eloBoost[idDesejado].img;
   resultadoH1.innerHTML = 'R$' + calculo;
   valorAntigo.innerHTML = calculo + (calculo * 0,25);
   valorAntigo.innerHTML = 'R$' + valorAntigo.innerHTML
