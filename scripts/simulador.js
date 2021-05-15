@@ -298,7 +298,6 @@ var ligaDesejada = document.getElementById('ligaDesejada');
 var divisaoDesejada = document.getElementById('divisaoDesejada');
 
 function Simular(){
-  console.log(`Liga Atual: ${ligaAtual.selectedIndex} Divisão Atual: ${divisaoAtual.selectedIndex} Liga Desejada: ${ligaDesejada.selectedIndex} Divisão desejada: ${divisaoDesejada.selectedIndex}`)
   if(ligaAtual.selectedIndex > ligaDesejada.selectedIndex){
     alert('Erro: A liga desejada deve ser maior que a liga atual');
   }else if(ligaAtual.selectedIndex == ligaDesejada.selectedIndex && divisaoAtual.selectedIndex > divisaoDesejada.selectedIndex){
@@ -321,7 +320,6 @@ function Simular(){
           estadoDesejado = i;
         }
       }
-      console.log(`estado atual= ${estadoAtual} estado desejado= ${estadoDesejado}`)
     CalcularSimulacao(estadoAtual, estadoDesejado);
   }
 }
