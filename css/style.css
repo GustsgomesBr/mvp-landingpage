@@ -57,7 +57,14 @@ header nav a{
   font-weight: 500;
   text-decoration: none;
   color: white;
+  transition: 0.3s ease;
 }
+header nav a:hover{
+  color: #4141FA;
+  letter-spacing: 1px;
+}
+
+
 
 header .loginBtn{
   display: flex;
@@ -70,7 +77,8 @@ header .loginBtn{
   padding: 10px;
   border-radius: 20px;
   color: white;
-  box-shadow: 1px 3px 20px rgba(65, 65, 250, 0.479)
+  box-shadow: 1px 3px 20px rgba(65, 65, 250, 0.479);
+  cursor: pointer;
 }
 
 main .title{
