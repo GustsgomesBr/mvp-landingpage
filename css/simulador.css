@@ -73,6 +73,7 @@ padding-left: 1.5rem;
   height: 2rem;
   width: 7rem;
   border: 2px solid #171717;
+  transition: 0.3s;
 }
 
 .aboutBoost p{
@@ -132,4 +133,9 @@ padding-left: 1.5rem;
   box-shadow: 0px 5px 15px #46f36e71;
   transform: translateY(-3px);
 
+}
+
+select:disabled{
+  color: #e93c3c;
+  border: 2px solid #e93c3c;
 }
