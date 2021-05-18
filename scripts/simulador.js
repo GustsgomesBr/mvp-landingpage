@@ -333,11 +333,11 @@ function CalcularSimulacao(idAtual, idDesejado){
   for (let soma = idAtual+1; soma < idDesejado+1; soma++) {
     calculo = calculo + eloBoost[soma].valor
   }
-  if(Math.abs(idAtual - idDesejado) >= 3){
+  if(idAtual + 5 == idDesejado && eloBoost[idAtual].divisao === eloBoost[idDesejado].divisao){
     valorAntigo.innerHTML = calculo.toFixed(2);
     calculo = calculo - (calculo * 0.1);
   }else{
-    valorAntigo.innerHTML = calculo + (calculo * 0.1);
+    valorAntigo.innerHTML = calculo + (calculo * 0);
   }
   
   imgAtual.src = eloBoost[idAtual].img;
