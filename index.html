@@ -86,9 +86,9 @@
       <div class="simTitle">
         <h1>SIMULE O SEU PEDIDO</h1>
         <div class="simBtns">
-          <input type="button" id="active" value="Elo Boost">
-          <input type="button" value="Duo Boost">
-          <input type="button" value="Coach">
+          <input type="button" id="active" value="Elo Boost" class="boostsBtn" onclick="selectType('Elo Boost')">
+          <input type="button" value="Duo Boost" class="boostsBtn" onclick="selectType('Duo Boost')">
+          <input type="button" value="Coach" class="boostsBtn" onclick="selectType('Coach')">
         </div>
       </div>
       <div class="simBlocks">
@@ -139,7 +139,7 @@
         </div>
         <div class="result">
           <div class="aboutBoost">
-            <p>“Com Elo Boost você vai ter talz e talz e talz talz talz tazzzlllzl e talz ta ligado?”</p>
+            <p id="boostInfo">“Com Elo Boost você vai ter talz e talz e talz talz talz tazzzlllzl e talz ta ligado?”</p>
           </div>
           <div class="simResult">
             <p>De:</p>

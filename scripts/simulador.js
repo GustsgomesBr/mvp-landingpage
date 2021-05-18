@@ -297,6 +297,34 @@ var divisaoAtual = document.getElementById('divisaoAtual');
 var ligaDesejada = document.getElementById('ligaDesejada');
 var divisaoDesejada = document.getElementById('divisaoDesejada');
 
+var boostType = ["Elo Boost", "Duo Boost", "Coach"];
+var boostSelected = 0;
+var eloBoostBtn = document.getElementsByClassName('boostsBtn');
+var boostInfo = document.getElementById('boostInfo');
+
+function selectType(boost){
+  if(boost == boostType[0]){
+    boostSelected = 0;
+    eloBoostBtn[0].id = "active";
+    eloBoostBtn[1].id = "";
+    eloBoostBtn[2].id = "";
+    boostInfo.innerHTML = '“Com Elo Boost você vai ter talz e talz e talz talz talz tazzzlllzl e talz ta ligado?"'
+  }else if(boost == boostType[1]){
+    boostSelected = 1;
+    eloBoostBtn[0].id = "";
+    eloBoostBtn[1].id = "active";
+    eloBoostBtn[2].id = "";
+    boostInfo.innerHTML = '“Com Duo Boost você vai ter ajuda com os melhores boosters duo talz talz."'
+  }else if(boost == boostType[2]){
+    boostSelected = 2;
+    eloBoostBtn[0].id = "";
+    eloBoostBtn[1].id = "";
+    eloBoostBtn[2].id = "active";
+    boostInfo.innerHTML = '“Coach"'
+  }
+  Simular();
+}
+
 function Simular(){
   if(ligaAtual.selectedIndex > ligaDesejada.selectedIndex){
     alert('Erro: A liga desejada deve ser maior que a liga atual');
@@ -331,13 +359,17 @@ function CalcularSimulacao(idAtual, idDesejado){
   var resultadoH1 = document.getElementById('resultadoSimulacao');
   var valorAntigo = document.getElementById('valorAnterior');
   for (let soma = idAtual+1; soma < idDesejado+1; soma++) {
-    calculo = calculo + eloBoost[soma].valor
+    if(boostSelected == 0){
+      calculo = calculo + eloBoost[soma].valor
+    }else if(boostSelected == 1){
+      calculo = calculo + duoBoost[soma].valor
+    }
   }
   if(idAtual + 4 == idDesejado && eloBoost[idAtual].divisao === eloBoost[idDesejado].divisao){
     valorAntigo.innerHTML = calculo.toFixed(2);
     calculo = calculo - (calculo * 0.1);
   }else{
-    valorAntigo.innerHTML = calculo + (calculo * 0.15);
+    valorAntigo.innerHTML = calculo + (calculo * 0.1);
   }
   
   imgAtual.src = eloBoost[idAtual].img;
