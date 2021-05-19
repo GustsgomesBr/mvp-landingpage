@@ -358,6 +358,8 @@ function CalcularSimulacao(idAtual, idDesejado){
   var imgDesejado = document.getElementById('imgDesejado');
   var resultadoH1 = document.getElementById('resultadoSimulacao');
   var valorAntigo = document.getElementById('valorAnterior');
+  var bonusP = document.getElementById('bonusP');
+
   for (let soma = idAtual+1; soma < idDesejado+1; soma++) {
     if(boostSelected == 0){
       calculo = calculo + eloBoost[soma].valor
@@ -368,8 +370,11 @@ function CalcularSimulacao(idAtual, idDesejado){
   if(idAtual + 4 == idDesejado && eloBoost[idAtual].divisao === eloBoost[idDesejado].divisao){
     valorAntigo.innerHTML = calculo.toFixed(2);
     calculo = calculo - (calculo * 0.1);
+    bonusP.innerHTML = "Bônus de liga +10% de desconto aplicado";
+
   }else{
     valorAntigo.innerHTML = calculo + (calculo * 0.1);
+    bonusP.innerHTML = "";
   }
   
   imgAtual.src = eloBoost[idAtual].img;
