@@ -1,7 +1,7 @@
 .fifthSection{
   background-color: #FBFBFB;
   width: 100vw;
-  height: 40rem;
+  min-height: 40rem;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
@@ -17,19 +17,16 @@
   height: 95%;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   margin-top: 1rem;
 }
 
 .perguntaItem{
   width: 35rem;
-  height: 4rem;
-  background-color: #4141FA;
-  border-radius: 10px;
+  min-height: 4rem;
+  outline: 3px solid #4141FA;
   display: flex;
-  align-items: center;
-  padding-left: 20px;
+  flex-direction: column;
   color: white;
   margin-top: 1rem;
   cursor: pointer;
@@ -38,4 +35,13 @@
 .perguntaItem h1{
   font-size: 13pt;
   font-weight: 400;
+  background-color: #4141FA;
+  height: 4rem;
+  padding-left: 20px;
+  padding-top: 20px
+}
+
+.perguntaItem p{
+  padding: 10px;
+  color: #4141FA;
 }
