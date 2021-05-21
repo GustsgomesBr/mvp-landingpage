@@ -1,7 +1,7 @@
 .fifthSection{
   background-color: #FBFBFB;
   width: 100vw;
-  min-height: 40rem;
+  min-height: 25rem;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
@@ -18,7 +18,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .perguntaItem{
