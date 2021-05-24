@@ -17,6 +17,9 @@ async function loginUser(){
     const data = await response.json();
     let token = data.token
     document.cookie = `token=${token}`;
+    if(data.token != null){
+      window.open('/app', '_self');
+    }
   }
   catch (error){
     console.error(error);
