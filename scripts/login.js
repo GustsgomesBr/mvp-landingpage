@@ -15,8 +15,8 @@ async function loginUser(){
       body: JSON.stringify({username: login, password: senha})
     });
     const data = await response.json();
-    let token = new Headers();
-    token.append('Authorization', data.token);
+    let token = data.token
+    document.cookie = `token=${token}`;
   }
   catch (error){
     console.error(error);
